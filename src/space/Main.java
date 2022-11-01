@@ -14,6 +14,10 @@ public class Main {
 
         Hviezda mojeSlnko = new Hviezda();
 
+        Galaxia mliecna_cesta = new Galaxia();
+
+        Slnecna_sustava slnkova_susatava = new Slnecna_sustava();
+
         Planeta merkur = new Planeta();
         Planeta venusa = new Planeta();
         Planeta  zem = new Planeta();
@@ -31,6 +35,12 @@ public class Main {
         mojprvyvesmir.decreaseSize(); // funkcia velkost 2
 
         mojprvyvesmir.stopVesmir(); //stop vesmiru
+
+        mliecna_cesta.addSustava(slnkova_susatava); //slnecna sustava
+
+        mliecna_cesta.zvecsenie(200);
+
+
 
         System.out.println(mojaplaneta.gravitacia);
         mojaplaneta.setVaha(100000);
