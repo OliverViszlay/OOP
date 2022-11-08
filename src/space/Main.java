@@ -18,6 +18,8 @@ public class Main {
 
         Slnecna_sustava slnkova_susatava = new Slnecna_sustava();
 
+
+
         Planeta merkur = new Planeta();
         Planeta venusa = new Planeta();
         Planeta  zem = new Planeta();
@@ -38,7 +40,13 @@ public class Main {
 
         mliecna_cesta.addSustava(slnkova_susatava); //slnecna sustava
 
-        mliecna_cesta.zvecsenie(200);
+
+
+        Kometa kometa_kometeus = new Kometa("kometa","Kometeus");
+
+        mliecna_cesta.setKometa(kometa_kometeus);
+
+        mliecna_cesta.kometa_leti();
 
 
 

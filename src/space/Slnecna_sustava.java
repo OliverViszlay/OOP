@@ -39,4 +39,12 @@ public class Slnecna_sustava {
     public void setObject_counter(int object_counter) {
         this.object_counter = object_counter;
     }
+
+    public Vesmirne_teleso[] getObezna_draha() {
+        return obezna_draha;
+    }
+
+    public void setObezna_draha(Vesmirne_teleso[] obezna_draha) {
+        this.obezna_draha = obezna_draha;
+    }
 }

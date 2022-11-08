@@ -45,20 +45,20 @@ public class Planeta extends Vesmirne_teleso{
         if(this.vaha>vaha) {
             if ((this.vaha - vaha) <= 1000) {
 
-                System.out.println("Ja chudnem");
+                System.out.println("maličká");
                 decreaseGravity(0.1);
             } else {
 
-                System.out.println("Ja chudnem velmi");
+                System.out.println("velmi malička");
             }
         } else {
             if (Math.abs(this.vaha-vaha)<=1000){
-                System.out.println("Sakra, pribrala som");
-                System.out.println("vaha je"+vaha+"kg");
+                System.out.println("Sakra, velmi velká");
+                System.out.println("vaha je teraz "+vaha+"kg");
 
 
             }else {
-                System.out.println("pribrala som moc");
+                System.out.println("Velmi velká!");
                 increaseGravity(0.1);
             }
         }
@@ -85,7 +85,7 @@ public class Planeta extends Vesmirne_teleso{
     }
 
     public Planeta(String nazov,double vaha,double priemer) {
-        super(nazov); //konstruktor neviem
+        super(nazov);
         this.nazov = nazov;
         this.vaha = vaha;
         this.priemer = priemer;
@@ -108,6 +108,11 @@ public class Planeta extends Vesmirne_teleso{
         this.gravitacia = gravitacia;
     }
 
+    public String getNazov() {
+        return nazov;
+    }
 
-
+    public void setNazov(String nazov) {
+        this.nazov = nazov;
+    }
 }

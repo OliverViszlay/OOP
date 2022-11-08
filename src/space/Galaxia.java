@@ -2,7 +2,8 @@ package space;
 
 public class Galaxia {
 
-    public int velkost;
+
+    public Kometa kometa;
 
     private Slnecna_sustava[] planetarna_sustava = new Slnecna_sustava[100];
 
@@ -13,9 +14,20 @@ public class Galaxia {
 
     }
 
-    public void zvecsenie(int hodnota){
-        while(velkost != hodnota){
-            velkost++;
-        }
+
+    public void kometa_leti(){
+
+        Planeta vesmirne_teleso = (Planeta) this.planetarna_sustava[0].getObezna_draha()[0];
+        this.kometa.spadnem_na_planetu(vesmirne_teleso, this.kometa); //domáca uloha
+
+
+    }
+
+    public Kometa getKometa() {
+        return kometa;
+    }
+
+    public void setKometa(Kometa kometa) {
+        this.kometa = kometa;
     }
 }
