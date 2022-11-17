@@ -1,6 +1,6 @@
-package space;
+package com.company.vesmirnetelesa;
 
-public class Planeta extends Vesmirne_teleso{
+public class Planeta extends Vesmirne_teleso {
     private String nazov;
 
     private double vaha;

@@ -1,8 +1,6 @@
-package space;
+package com.company.vesmirnetelesa;
 
-import java.sql.SQLOutput;
-
-public class Kometa extends Vesmirne_teleso{
+public class Kometa extends Vesmirne_teleso {
 
     public String nazov;
 

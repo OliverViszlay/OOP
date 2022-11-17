@@ -1,4 +1,4 @@
-package space;
+package com.company.vesmirnetelesa;
 
 public class Galaxia {
 

@@ -1,6 +1,8 @@
-package space;
+package com.company.vesmirnetelesa;
 
-public class Hviezda extends Vesmirne_teleso{
+import com.company.vesmirnetelesa.Vesmirne_teleso;
+
+public class Hviezda extends Vesmirne_teleso {
 
     private String nazov;
 

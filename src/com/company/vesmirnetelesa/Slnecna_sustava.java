@@ -1,6 +1,10 @@
-package space;
+package com.company.vesmirnetelesa;
 
 public class Slnecna_sustava {
+
+
+
+
 
     private Hviezda slnko;
 

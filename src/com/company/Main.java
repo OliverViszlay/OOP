@@ -1,4 +1,13 @@
-package space;
+package com.company;
+
+import com.company.vesmirnetelesa.*;
+import com.company.space.Vesmir;
+import com.company.zive_tvory.*;
+import com.company.zive_tvory.Ryby.Kapor;
+import com.company.zive_tvory.Ryby.zralok;
+import com.company.zive_tvory.Vtaky.Orol;
+
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,11 +27,49 @@ public class Main {
 
         Slnecna_sustava slnkova_susatava = new Slnecna_sustava();
 
+        ZEM maticka_zem = new ZEM("modra planeta", 500000,45000);
+
+        Kapor vianocnykapor = new Kapor(50);
+
+        Date dNow = new Date();
+        vianocnykapor.born(dNow);
+
+        maticka_zem.add_tvor(vianocnykapor);
+        vianocnykapor.hybsa(10,10,0);
+        vianocnykapor.die(dNow);
+
+        System.out.println("vianocny kapor sa narodil"+vianocnykapor.getDatum_narodenia());
+        System.out.println("Vianocny kapor umrel"+vianocnykapor.getDatum_umrtia());
+
+        for (int i=0;i<vianocnykapor.getSustavy().length;i++)
+        {
+            System.out.println(vianocnykapor.getSustavy()[i].getTypSustavy());
+        }
+
+
+        for(int i = 0; i<2000;i++){
+           // maticka_zem.add_tvor(new Ryby());
+           // maticka_zem.add_tvor(new Vtak());
+            maticka_zem.add_tvor(new Velryba());
+            maticka_zem.add_tvor(new Fenix());
+            maticka_zem.add_tvor(new zralok(8));
+            maticka_zem.add_tvor(new Orol(6));
+            maticka_zem.add_tvor(new Mucha());
+        }
+
+        ATvor[] pole = maticka_zem.getPoleTvorov();
+
+        for (int i=0;i<2000;i++)
+        {
+            pole[i].hybsa(10,10,10);
+        }
+
+
 
 
         Planeta merkur = new Planeta();
         Planeta venusa = new Planeta();
-        Planeta  zem = new Planeta();
+       // Planeta  zem = new Planeta();
         Planeta mars = new Planeta();
         Planeta jupiter = new Planeta();
         Planeta saturn = new Planeta();
@@ -68,4 +115,6 @@ public class Main {
         mojaplaneta.setPlanetaryWeight(200);
 
     }
+
+
 }

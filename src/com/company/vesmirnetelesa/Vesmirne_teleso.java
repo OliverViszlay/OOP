@@ -1,6 +1,8 @@
-package space;
+package com.company.vesmirnetelesa;
 
 public class Vesmirne_teleso {
+
+
 
     private String typ;
 

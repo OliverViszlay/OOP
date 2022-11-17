@@ -1,4 +1,4 @@
-package space;
+package com.company.space;
 
 public class Vesmir {
     private boolean state;
