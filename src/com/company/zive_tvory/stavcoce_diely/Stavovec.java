@@ -7,7 +7,7 @@ import java.util.Date;
 
 
 
-public class Stavovec extends ATvor {
+public abstract class Stavovec extends ATvor {
     public Stavovec() {
 
     }
@@ -35,7 +35,8 @@ public class Stavovec extends ATvor {
         create_sustavy();
     }
 
-    private void create_sustavy()
+    @Override
+    protected void create_sustavy()
     {
         sustavy = new Sustava[8];
 
@@ -52,6 +53,8 @@ public class Stavovec extends ATvor {
     public Sustava[] getSustavy() {
         return sustavy;
     }
+
+
 }
 
 

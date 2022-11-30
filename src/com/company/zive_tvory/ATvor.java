@@ -16,6 +16,8 @@ public abstract class ATvor implements Ibornable,Idieable{
     public Date getDatum_umrtia() {
         return datum_umrtia;
     }
+
+    protected abstract void create_sustavy();
 }
 
 
